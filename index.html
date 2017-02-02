@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Zelo Frontend</title>
+</head>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+
+<body ng-app="MyApp" id="myApp">
+	<div class="well head">
+		<b class="heading">ShowMyImages</b><label style="padding-left:20px"> -- By flickr</label>
+	</div>
+	<div class="content" ng-controller = "mainCtrl">
+			<!-- <div ui-view></div> -->
+			<form class="" action="http://127.0.0.1:3000/process_post" method="post">
+				<input type="text" name="fname" value="" ng-model = "fname">
+				<input type="text" name="lname" value="" ng-model = "lname">
+				<input type="submit" name="submit" value="submit" >
+			</form>
+	</div>
+</body>
+
+	<script src="Angular/angular.js"></script>
+	<script src="Angular/angular-ui-router.js"></script>
+	<script src="Angular/jquery.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+<script src="app.service.js" charset="utf-8"></script>
+
+</html>
