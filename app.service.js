@@ -4,8 +4,9 @@ app.controller("mainCtrl",function($scope, $http){
   $scope.submit = function(){
     $http( {
       method: "POST",
+      //url: "http://127.0.0.1:3000/"
       url: "http://127.0.0.1:3000/process_post",
-      data: {
+      params: {
         "fname": $scope.fname,
         "lname": $scope.lname
       }

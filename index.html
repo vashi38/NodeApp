@@ -10,10 +10,10 @@
 	</div>
 	<div class="content" ng-controller = "mainCtrl">
 			<!-- <div ui-view></div> -->
-			<form class="" action="http://127.0.0.1:3000/process_post" method="post">
+			<form class="" >
 				<input type="text" name="fname" value="" ng-model = "fname">
 				<input type="text" name="lname" value="" ng-model = "lname">
-				<input type="submit" name="submit" value="submit" >
+				<input type="submit" name="submit" value="submit" ng-click = "submit()">
 			</form>
 	</div>
 </body>
